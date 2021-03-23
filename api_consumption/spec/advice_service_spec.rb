@@ -11,7 +11,6 @@ describe AdviceService do
 
   it 'can find a random piece of advice' do
     random = @a.random
-
     expect(random["slip"]).to have_key("id")
     expect(random["slip"]).to have_key("advice")
   end
