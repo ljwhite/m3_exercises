@@ -7,7 +7,6 @@ class AdviceService
   def random
     response = conn.get "/advice"
     JSON.parse(response.body)
-    binding.pry
   end
 
   def search(keyword)
